@@ -1,5 +1,7 @@
 # Initiation aux séquences d'échappement
 
+## Lancer `esc-seq.sh`
+
 L'idée de cet utilitaire est de vous aider à manipuler les séquences d'échappement du terminal pour en comprendre le fonctionnement.
 
 Pour lancer l'outil, il faut d'abord cloner ce dépôt:
@@ -29,3 +31,8 @@ Terminal file: /dev/pts/3
 Le `>` et un prompt qui nous invite à taper du texte.
 
 Si on tape: `Bonjour` dans le prompt puis entrer, on a `Bonjour` qui s'affiche dans le terminal fils.
+
+## Ressources
+
+- [Documentation de Xterm](https://www.xfree86.org/4.8.0/ctlseqs.html)
+- [Bash Hacker Wiki](http://wiki.bash-hackers.org/scripting/terminalcodes)
