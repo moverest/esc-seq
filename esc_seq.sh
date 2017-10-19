@@ -9,10 +9,8 @@ function launch_terminal() {
 		sleep 1
 	done
 	echo " done."
-	shell_pid=`cat $pty_path_file`
+	term=`cat $pty_path_file`
 	rm $pty_path_file
-	echo "Shell pid: $shell_pid"
-	term=`readlink /proc/$shell_pid/fd/0`
 	echo "Terminal file: $term"
 
 	buffer=
@@ -28,7 +26,7 @@ function start() {
 
 function client() {
 	pty_path_file="$1"
-	echo $BASHPID > "$pty_path_file"
+	tty > "$pty_path_file"
 	sleep infinity
 }
 
