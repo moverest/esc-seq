@@ -23,7 +23,6 @@ Si tout ce passe bien, on devrait avoir un terminal qui se lance avec rien dedan
 
 ```
 Waiting for terminal to launch... done.
-Shell pid: 6189
 Terminal file: /dev/pts/3
 >
 ```
